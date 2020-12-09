@@ -13,14 +13,17 @@ namespace Hantverksboden1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ICraftRepository _craftRepository;
+
+        public HomeController(ILogger<HomeController> logger, ICraftRepository craftRepository)
         {
             _logger = logger;
+            _craftRepository = craftRepository;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_craftRepository.AllCrafts);
         }
 
         public IActionResult Privacy()
