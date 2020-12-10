@@ -1,20 +1,33 @@
 ﻿@model IEnumerable<Hantverksboden1.Models.Craft>  // Lower case model
 
 <div class="text-center">
-    <h1 class="display-4">Välkommen till Hantverksboden.</h1>
-    
+    <h1 class="display-4">Välkommen till Hantverksboden.</h1>    
 </div>
-@foreach(var craft in Model) // Upper case Model
-    {
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="@craft.ImageThumbnailUrl" alt="">
-                <div class="caption">
-                    <h3>
-                        <a>@craft.Name</a>
-                    </h3>
-                    <p>@craft.ShortDescription</p>
+<div class="text-center">
+    <p>
+        Vi på Hantverksboden tillverkar föremål i näver.<br />
+        Våra artiklar är lika vackra att se på som de är praktiska att använda. <br />
+        Här nedan ser du vårt utbud av näverföremål <br />
+        Inom kort kommer vi att erbjuda möjligheten att beställ direkt här på sidan. <br />
+        Fram till dess ber vi dig <a href="#">kontakta oss</a>  om det är något du är intreserad av.
+    </p>
+
+</div>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        @foreach (var craft in Model) // Upper case Model
+        {
+            <div class="card col-sm-4 col-lg-4 col-md-4 mr-2 mb-2">
+                <div class="card-body">
+                    <img src="@craft.ImageThumbnailUrl" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a>@craft.Name</a>
+                        </h5>
+                        <p class="card-text">@craft.ShortDescription</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
+</div>
