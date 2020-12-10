@@ -26,7 +26,7 @@ namespace Hantverksboden1.Controllers
             return View(_craftRepository.AllCrafts);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Contact()
         {
             return View();
         }
