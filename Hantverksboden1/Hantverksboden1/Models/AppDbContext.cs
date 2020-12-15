@@ -12,5 +12,9 @@ namespace Hantverksboden1.Models
         {
 
         }
+
+        public DbSet<Craft> Crafts { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
     }
 }
