@@ -26,11 +26,11 @@ namespace Hantverksboden1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseInMemoryDatabase("CraftsDb"));
 
             services.AddControllersWithViews();
 
-            services.AddScoped<ICraftRepository, MockCraftRepository>();
+            services.AddScoped<ICraftRepository, CraftRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
