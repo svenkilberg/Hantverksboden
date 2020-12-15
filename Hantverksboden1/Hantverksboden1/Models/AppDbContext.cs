@@ -25,9 +25,9 @@ namespace Hantverksboden1.Models
 
             //seed categories
             modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Näverslöjd" });
-            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Svepaskar" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Svepteknik" });
             modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 3, CategoryName = "Virkning" });
-            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 4, CategoryName = "Tavlor" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 4, CategoryName = "Skärbrädor" });
             
             //seed crafts
             modelBuilder.Entity<Craft>().HasData(new Craft
@@ -98,14 +98,118 @@ namespace Hantverksboden1.Models
             modelBuilder.Entity<Craft>().HasData(new Craft
             {
                 CraftId = 6,
-                Name = "Test test",
+                Name = "Svepask oval",
                 Price = 0.0M,
-                ShortDescription = "Test eli test test.",
+                ShortDescription = "Oval svepask med lock.",
                 LongDescription = "",
                 ImageLargeUrl = "",
-                ImageThumbnailUrl = "",
+                ImageThumbnailUrl = "/images/Svepteknik1_small.jpg",
                 InStock = true,
-                CategoryId = 1
+                CategoryId = 2
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 7,
+                Name = "Svepask rund",
+                Price = 0.0M,
+                ShortDescription = "Rund svepask med lock.",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Svepteknik2_small.jpg",
+                InStock = true,
+                CategoryId = 2
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 8,
+                Name = "Svepkorg oval",
+                Price = 0.0M,
+                ShortDescription = "Oval svepkorg med handtag.",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Svepteknik3_small.jpg",
+                InStock = true,
+                CategoryId = 2
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 9,
+                Name = "Grytlappar",
+                Price = 0.0M,
+                ShortDescription = "Virkade rosa grytlappar.",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Virkning1_small.jpg",
+                InStock = true,
+                CategoryId = 3
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 10,
+                Name = "Tomtar",
+                Price = 0.0M,
+                ShortDescription = "Två tomtar i vitt och rött.",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Virkning2_small.jpg",
+                InStock = true,
+                CategoryId = 3
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 11,
+                Name = "Lussebulle",
+                Price = 0.0M,
+                ShortDescription = "Virkad lussebulle.",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Virkning3_small.jpg",
+                InStock = true,
+                CategoryId = 3
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 12,
+                Name = "Rund skärbräda",
+                Price = 0.0M,
+                ShortDescription = "Rund skärbräda i mörkt träslag..",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Skaerbraeda1_small.jpg",
+                InStock = true,
+                CategoryId = 4
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 13,
+                Name = "Oval skärbräda",
+                Price = 0.0M,
+                ShortDescription = "Oval skärbräda i ljust träslag..",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Skaerbraeda2_small.jpg",
+                InStock = true,
+                CategoryId = 4
+            });
+
+            modelBuilder.Entity<Craft>().HasData(new Craft
+            {
+                CraftId = 14,
+                Name = "Fyrkantig skärbräda",
+                Price = 0.0M,
+                ShortDescription = "Fyrkantig skärbräda i ljust träslag..",
+                LongDescription = "",
+                ImageLargeUrl = "",
+                ImageThumbnailUrl = "/images/Skaerbraeda3_small.jpg",
+                InStock = true,
+                CategoryId = 4
             });
         }
     }

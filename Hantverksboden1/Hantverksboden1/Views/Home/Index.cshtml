@@ -17,13 +17,13 @@
     <div class="row d-flex justify-content-center">
         @foreach (var craft in Model) // Upper case Model
         {
-            <div class="card col-sm-4 col-lg-4 col-md-4 mr-2 mb-2">
+            <div class="card col-sm-4 col-lg-3 col-md-4 mr-2 mb-2">
                 <div class="card-body">
                     <img src="@craft.ImageThumbnailUrl" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h6 class="card-title">
                             <a>@craft.Name</a>
-                        </h5>
+                        </h6>
                         <p class="card-text">@craft.ShortDescription</p>
                     </div>
                 </div>
