@@ -22,9 +22,7 @@ namespace Hantverksboden1.Models
                 return _appDbContext.Crafts.Include(c => c.Category);
             }
         }       
-
-        public IEnumerable<Craft> CraftsByCategory;
-
+       
         public Craft GetCraftById(int craftId)
         {
             throw new NotImplementedException();
