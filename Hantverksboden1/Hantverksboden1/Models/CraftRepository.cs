@@ -30,9 +30,9 @@ namespace Hantverksboden1.Models
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Craft> GetCraftByCategory(int categoryId)
+        public IEnumerable<Craft> GetCraftByCategory(int categoryId, IEnumerable<Craft> allCrafts)
         {
-            return _appDbContext.Crafts.Where(cr => cr.CategoryId == categoryId);            
+            return allCrafts.Where(cr => cr.CategoryId == categoryId);            
         }        
     }
 }

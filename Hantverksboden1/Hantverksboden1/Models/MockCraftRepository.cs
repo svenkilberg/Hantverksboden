@@ -22,6 +22,11 @@ namespace Hantverksboden1.Models
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Craft> GetCraftByCategory(int categoryID, IEnumerable<Craft> allCrafts)
+        {
+            throw new NotImplementedException();
+        }
+
         public Craft GetCraftById(int craftId)
         {
             return AllCrafts.FirstOrDefault(c => c.CraftId == craftId);

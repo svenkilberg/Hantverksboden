@@ -9,6 +9,6 @@ namespace Hantverksboden1.Models
     {
         public IEnumerable<Craft> AllCrafts { get; }        
         Craft GetCraftById(int craftId);
-        IEnumerable<Craft> GetCraftByCategory(int categoryID);
+        IEnumerable<Craft> GetCraftByCategory(int categoryID, IEnumerable<Craft> allCrafts);
     }
 }
