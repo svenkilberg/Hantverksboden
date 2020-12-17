@@ -17,6 +17,11 @@ namespace Hantverksboden1.Models
                 new Craft {CraftId = 5, Name = "Keps", Price = 0.0M, ShortDescription = "Keps tillverkad av näver. Skyddar mot solen samtidigt som den är ventilerad.", LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elit.", ImageLargeUrl = "", ImageThumbnailUrl = "/images/Craft5_small.jpg" , InStock = true},
             };
 
+        public IEnumerable<Craft> GetCraftByCategory(int categoryID)
+        {
+            throw new NotImplementedException();
+        }
+
         public Craft GetCraftById(int craftId)
         {
             return AllCrafts.FirstOrDefault(c => c.CraftId == craftId);

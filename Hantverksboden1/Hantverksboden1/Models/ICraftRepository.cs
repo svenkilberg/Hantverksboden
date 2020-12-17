@@ -7,7 +7,8 @@ namespace Hantverksboden1.Models
 {
     public interface ICraftRepository
     {
-        public IEnumerable<Craft> AllCrafts { get; }
+        public IEnumerable<Craft> AllCrafts { get; }        
         Craft GetCraftById(int craftId);
+        IEnumerable<Craft> GetCraftByCategory(int categoryID);
     }
 }

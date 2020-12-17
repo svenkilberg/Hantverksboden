@@ -9,6 +9,7 @@ namespace Hantverksboden1.Models
     public class CraftRepository : ICraftRepository
     {
         private readonly AppDbContext _appDbContext;
+        
         public CraftRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
@@ -20,11 +21,18 @@ namespace Hantverksboden1.Models
             {
                 return _appDbContext.Crafts.Include(c => c.Category);
             }
-        }
+        }       
+
+        public IEnumerable<Craft> CraftsByCategory;
 
         public Craft GetCraftById(int craftId)
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Craft> GetCraftByCategory(int categoryId)
+        {
+            return _appDbContext.Crafts.Where(cr => cr.CategoryId == categoryId);            
+        }        
     }
 }

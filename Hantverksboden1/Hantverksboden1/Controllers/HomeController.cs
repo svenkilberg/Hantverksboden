@@ -31,6 +31,26 @@ namespace Hantverksboden1.Controllers
             return View();
         }
 
+        public IActionResult CraftCategory1(string categoryId)
+        {
+            return View(_craftRepository.GetCraftByCategory(Convert.ToInt32(categoryId)));
+        }
+
+        public IActionResult CraftCategory2(string categoryId)
+        {
+            return View(_craftRepository.GetCraftByCategory(Convert.ToInt32(categoryId)));
+        }
+
+        public IActionResult CraftCategory3(string categoryId)
+        {
+            return View(_craftRepository.GetCraftByCategory(Convert.ToInt32(categoryId)));
+        }
+
+        public IActionResult CraftCategory4(string categoryId)
+        {
+            return View(_craftRepository.GetCraftByCategory(Convert.ToInt32(categoryId)));
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
