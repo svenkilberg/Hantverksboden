@@ -23,3 +23,5 @@ Första testet heter GetCraftsByCategoryTest. Testet kontrollerar att metoden i 
 Andra tetstet heter GetCraftByIdTest. Detta test kontrollerar att en metod i repositoriet för att hämta ut ett föremål med ett specifikt id fungerar. Testet anropar först metoden med en parameter för det önskade föremålet. I assert kontrollreras att det returnerade föremålet har rätt id.
 
 Dessa tester tillhör två metoder som är viktiga för att applikationen skall fungera som det är tänkt. Metoden för att hämta alla föremål i en kategori används redan idag. Metoden för att hämta ut enskilda föremål kommer att bli viktig när funktionalitet för en varukorg och beställning läggs till i framtiden.
+
+När jag lade till projektet för testerna såg jag att det blev en mappstuktrur som jag inte är riktigt nöjd med. För ordningens skull vill jag hellre ha den uppdelning som vi har haft förut med src och test som olika mappar. Jag beslutade att inte ändra på detta så här till inlämningen. Kommer prova att strukturera om det inför nästa del av kursen.
