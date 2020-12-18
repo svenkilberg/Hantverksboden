@@ -18,7 +18,7 @@ För vyerna skapade jag en partial view som generar de kort som visar varje för
 
 ## Enhetstester
 
-Första testet heter GetCraftsByCategoryTest. Testet kontrollerar att metoden i repositoriet som listar alla föremål av samma katergori fungerar. Testet anropar först denna metoden med en parameter för vilen kategori som föremålen skall tillhöra. Assert går sedan ingenom listan och kontrollerar att alla föremål har den önskade kategorin.
+Första testet heter GetCraftsByCategoryTest. Testet kontrollerar att metoden i repositoriet som listar alla föremål av samma katergori fungerar. Testet anropar först denna metoden med en parameter för vilken kategori som föremålen skall tillhöra. Assert går sedan ingenom listan och kontrollerar att alla föremål har den önskade kategorin.
 
 Andra tetstet heter GetCraftByIdTest. Detta test kontrollerar att en metod i repositoriet för att hämta ut ett föremål med ett specifikt id fungerar. Testet anropar först metoden med en parameter för det önskade föremålet. I assert kontrollreras att det returnerade föremålet har rätt id.
 
