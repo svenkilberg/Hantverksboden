@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Hantverksboden1.Models.Craft>
+
+    <div class="text-center">
+        <h1 class="display-4">Näverslöjd</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            @foreach (var craft in Model) // Upper case Model
+            {
+                <partial name="_CraftCard" model="craft" />
+            }
+        </div>
+    </div>
