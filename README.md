@@ -4,8 +4,8 @@ This is an exercise in ASP.NET MVC.
 The goal is to create an store front to  
 display a number of hand crafted items.
 
-All items are stored in a database.
-A selection is available based on the items category.
+All items are stored in a database.  
+A selection is available based on the items category.  
 When a category is selected the view shows only items of that specific category.
 
 Unit test are implemented using the xUnit testing tool.
